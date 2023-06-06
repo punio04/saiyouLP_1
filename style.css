@@ -9406,7 +9406,7 @@
         content: '' !important;
         position: absolute !important;
         top: 30% !important;
-        left: 260px !important;
+        left: 242px !important;
         width: 28px !important;
         height: 28px !important;
         background-color: #f2f2f2 !important;
@@ -9585,12 +9585,12 @@
     }
 
     .acbox input:checked~label::after {
-      content: url(../img/open2.svg);
+      content: url(img/open2.png);
     }
 
     .acbox label:after {
       color: #113364;
-      content: url(../img/open.svg);
+      content: url(img/open.png);
       position: absolute;
       top: 50%;
       right: 15px;
@@ -9626,41 +9626,66 @@
       margin: 0 auto;
     }
 
-        @media screen and (min-width: 897px) {
-          header
-          {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1562px;
-            height: 70px;
-          }
-        }
-    
-        header {
-          position: relative;
-          padding: 15px 20px;
-          width: 100%;
-          height: 90px;
-          background-color: #fff;
-          vertical-align: top
+    @media screen and (min-width: 897px) {
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1562px;
+        height: 70px;
+      }
+    }
+
+    header {
+      position: relative;
+      padding: 15px 20px;
+      width: 100%;
+      height: 90px;
+      background-color: #fff;
+      vertical-align: top
+    }
+
+    .headerWrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+    }
+
+    .headerWrap_logo,
+    .headerWrap_logo img {
+      display: block;
+      height: 100%;
+    }
+
+    .headerWrap_logo,
+    .headerWrap_logo img {
+      display: block;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 480px) {
+      .members_title {
+          font-size: 20px;
+          margin-top: 50px
         }
 
-        .headerWrap {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          height: 100%;
-        }
+      .members_txt {
+        font-size: 13px;
+      }
 
-        .headerWrap_logo,
-        .headerWrap_logo img {
-          display: block;
-          height: 100%;
-        }
+      ol,
+      ul {
+        padding-left: 13px;
+      }
 
-        .headerWrap_logo,
-        .headerWrap_logo img {
-          display: block;
-          height: 100%;
-        }
+      .small_font {
+        text-align: center;
+        font-size: 10px;
+      }
+
+      .se_inner {
+        padding: 15px 20px 0px;
+        margin: 0 auto;
+      }
+    }
